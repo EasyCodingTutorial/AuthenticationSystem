@@ -1,0 +1,33 @@
+.LogoutBtn{
+    padding: 8px 22px;
+    background: var(--main);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 800;
+    position: absolute;
+    margin: 20px;
+}
+
+.AdminContent{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h6{
+        font-weight: 800;
+        font-size: 40px;
+
+        span{
+            color: var(--main);
+        }
+    }
+
+    h5{
+        font-weight: 800;
+        font-size: 30px;
+        color: #ccc;
+    }
+}

@@ -1,0 +1,14 @@
+.LogoutBtn{
+    padding: 8px 22px;
+    background: var(--main);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 800;
+    position: absolute;
+    margin: 20px;
+}
+
+.Profile{
+    padding-inline: 200px;
+    padding-block: 60px;
+}

@@ -1,0 +1,25 @@
+.AuthWrapper__Parent{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+    video{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .AuthWrapper{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

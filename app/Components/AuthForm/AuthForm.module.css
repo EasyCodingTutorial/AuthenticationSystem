@@ -1,0 +1,103 @@
+.AuthForm{
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    left: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    form{
+        box-shadow: var(--boxShadow);
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 650px;
+        width: 100%;
+        background: #000;
+        color: #fff;
+
+        .LogoContainer{
+          text-align: center;
+          margin-block: 10px;
+
+          h6{
+            font-weight: 800;
+            font-size: 40px;
+            background: -webkit-linear-gradient(#eee, #f00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+        }
+        /* For Btn */
+        .Btn{
+          width: 100%;
+          background: var(--main);
+          color: #fff;
+          padding: 8px 22px;
+          font-size: 17px;
+          font-weight: 800;
+          cursor: pointer;
+          border-radius: 10px;
+        }
+
+        /* For Error/Success Messages */
+        .MessageBox{
+           margin-block:8px;
+           margin-left: 6px;
+
+           p{
+             font-size: 13px;
+              width: max-content;
+              padding: 5px 12px;
+              border-radius: 10px;
+              margin-bottom: 3px;
+            }
+
+            .ErrorMessage{
+              background: #f00;
+            }
+            .SuccessMessage{
+             background: green;
+            }
+
+        }
+
+        /* For CustomMessage__Box */
+        .CustomMessage__Box{
+          margin-block: 5px;
+          padding: 4px;
+
+          .CustomMessage__Box__Text{
+            font-size: 13px;
+            margin-bottom: 5px;
+
+            span{
+              color: var(--main);
+              cursor: pointer;
+              width: max-content;
+              font-weight: 700;
+              text-decoration: underline;
+            }
+            }
+
+            .TOC{
+              font-size: 12px;
+              margin-top: 5px;
+
+              span{
+                color: var(--main);
+                text-decoration: underline;
+                cursor: pointer;
+                font-weight: 700;
+              }
+            }
+        }
+
+
+    }
+
+
+}

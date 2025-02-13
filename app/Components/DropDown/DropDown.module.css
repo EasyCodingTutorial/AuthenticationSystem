@@ -1,0 +1,24 @@
+.DropDown{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    label{
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    select{
+        width: 600px;
+        padding: 12px 14px;
+        font-size: 17px;
+        font-weight: 700;
+        margin-top: 7px;
+        border-radius: 10px;
+    }
+
+    .ErrorMessage{
+        color: red;
+        font-weight: 700;
+        margin-left: 8px;
+    }
+}
