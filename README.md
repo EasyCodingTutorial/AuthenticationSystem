@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Authentication System Using NextAuth.js   
 
-## Getting Started
+## Overview  
+This **Authentication System** is built using **Next.js 15** and **TypeScript**, leveraging **NextAuth.js** for secure user authentication with **credentials-based login**. This system provides a robust authentication solution, including hashed password storage, session management, and protected routes.  
 
-First, run the development server:
+This project is perfect for developers looking to learn or implement **role-based authentication, password security**, and **protected API routes** in their Next.js applications.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used  
+- **Next.js 14**: A React framework for building server-rendered applications with enhanced performance and SEO.  
+- **TypeScript**: A statically typed superset of JavaScript for better code maintainability.  
+- **NextAuth.js**: A flexible authentication solution supporting various sign-in methods.  
+- **bcrypt**: A password-hashing library ensuring user passwords are securely stored.  
+- **MongoDB**: A NoSQL database for storing user data.  
+- **JWT (JSON Web Tokens)**: Secure session management for user authentication.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features  
+✅ **Secure Login System**: Users authenticate using email and password.  
+✅ **Hashed Passwords**: Passwords are securely stored using **bcrypt**.  
+✅ **Session Management**: Authentication handled with **NextAuth.js** and **JWT-based sessions**.  
+✅ **Role-Based Access**: Admin and user roles with protected pages.  
+✅ **API Route Protection**: API endpoints are secured to prevent unauthorized access.  
+✅ **Client & Server Authentication**: Secure both frontend and backend routes.   
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔒 Protected Routes  
+Certain routes are protected based on authentication status and user roles.  
+- **Public Routes**: Anyone can access.  
+- **Protected Routes**: Require user login.  
+- **Admin Routes**: Only accessible by admin users.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation  
+Follow these steps to set up the project on your local machine:  
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Installation  
+To run this project locally, follow the steps below:  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone this repository to your local machine:  
+   ```bash  
+   git clone https://github.com/EasyCodingTutorial/AuthenticationSystem.git
+2. Navigate to the project directory:
+   ```bash  
+   cd hulu-clone
+   
+3. Install dependencies:
+   ```bash  
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Create a .env file in the root directory and add the following configuration:
+    ```bash
+    # NextAuth Configuration  
+     NEXTAUTH_URL=http://localhost:3000  
+     NEXTAUTH_SECRET=your-nextauth-secret-key  
 
-## Deploy on Vercel
+    # MongoDB Connection  
+    MONGODB_URI=your-mongo-db-uri  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   
+5. Start the development server:
+   ```bash  
+    npm run dev  
+   
+6. Open your browser and visit:
+   ```bash  
+    http://localhost:3000
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## How It Works
+   - User Registration: Users sign up with an email and password.
+   - Password Hashing: User passwords are hashed using bcrypt before storing in the database.
+   - Login with Credentials: Users enter their email and password to log in.
+   - Session Management: After logging in, NextAuth manages sessions using JWT tokens.
+   - Protected Routes: Users can only access certain pages after authentication.
+   - Role-Based Access: Admin users can access admin-only routes.
