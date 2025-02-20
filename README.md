@@ -1,4 +1,4 @@
-# Authentication System Using NextAuth.js   
+# Authentication System Using NextAuth 
 
 ## Overview  
 This **Authentication System** is built using **Next.js 15** and **TypeScript**, leveraging **NextAuth.js** for secure user authentication with **credentials-based login**. This system provides a robust authentication solution, including hashed password storage, session management, and protected routes.  
@@ -8,7 +8,6 @@ This project is perfect for developers looking to learn or implement **role-base
 ## Technologies Used  
 - **Next.js 14**: A React framework for building server-rendered applications with enhanced performance and SEO.  
 - **TypeScript**: A statically typed superset of JavaScript for better code maintainability.  
-- **NextAuth.js**: A flexible authentication solution supporting various sign-in methods.  
 - **bcrypt**: A password-hashing library ensuring user passwords are securely stored.  
 - **MongoDB**: A NoSQL database for storing user data.  
 - **JWT (JSON Web Tokens)**: Secure session management for user authentication.  
