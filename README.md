@@ -66,9 +66,14 @@ To run this project locally, follow the steps below:
 
 
 ## How It Works
-   - User Registration: Users sign up with an email and password.
-   - Password Hashing: User passwords are hashed using bcrypt before storing in the database.
-   - Login with Credentials: Users enter their email and password to log in.
-   - Session Management: After logging in, NextAuth manages sessions using JWT tokens.
-   - Protected Routes: Users can only access certain pages after authentication.
-   - Role-Based Access: Admin users can access admin-only routes.
+   - **User Registration**: Users sign up with an email and password.
+   - **Password Hashing**: User passwords are hashed using bcrypt before storing in the database.
+   - **Login with Credentials**: Users enter their email and password to log in.
+   - **Session Management**: After logging in, NextAuth manages sessions using JWT tokens.
+   - **Protected Routes**: Users can only access certain pages after authentication.
+   - **Role-Based Access**: Admin users can access admin-only routes.
+
+## Known Issues
+   - ❌ **Forgot Password Feature**: Currently not implemented.
+   - ❌ **User Profile Management**: No option for users to update their details.
+
