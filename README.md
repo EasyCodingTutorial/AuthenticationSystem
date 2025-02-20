@@ -77,3 +77,22 @@ To run this project locally, follow the steps below:
    - ❌ **Forgot Password Feature**: Currently not implemented.
    - ❌ **User Profile Management**: No option for users to update their details.
 
+## Missing Features
+   - Adding a "Forgot Password" feature using email-based password resets.
+   - Building a user profile management system.
+
+     If you find more issues or want to contribute, email me at **ecoding45@gmail.com**. Let’s collaborate to make this project better! 🚀
+
+## Contributions
+   Contributions are welcome! If you'd like to add new features or fix issues:
+
+   - Fork the repository.
+   - Create a new branch with your changes.
+   - Submit a pull request.
+
+     
+
+## Learn By Watching Video ▶️
+[![Watch Demo Video](https://img.youtube.com/vi/tyErSg83AWc/maxresdefault.jpg)](https://www.youtube.com/watch?v=tyErSg83AWc)
+
+
